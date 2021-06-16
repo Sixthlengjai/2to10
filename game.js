@@ -200,4 +200,12 @@ function input(y) {
   if (canProcess(y)) progress(y);
 }
 
+function outputhtml() {
+  var x = 0, y = 0;
+  var i;
+  for (i=0;i<16;i++) {
+     
+  }
+}
+
 initialize();
