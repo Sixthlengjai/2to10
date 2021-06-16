@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Game</title>
-<link rel="javascript" href="game.js">
+<link rel="stylesheet" href="box.css">
 </head>
 <style>
 	#heading1 {
@@ -34,84 +34,6 @@
     
     #gameboard td {
     	display: table-cell;
-    }
-    
-    #box2, #box4, #box8, #box16, #box32, #box64, #box128, #box256, #box512, #box1024, #box2048 {
-    	display: flex;
-        justify-content: center;
-        align-items: center;
-    	width: 100px;
-        height: 100px;
-        margin: auto;
-        font-family: Arial;
-        border: 1px solid black;
-        border-radius: 5px;
-    }
-    
-    #box2 {
-    	font-size: 64px;
-        background-color: #eee4da;
-        color: #776e65;
-    }
-    
-    #box4 {
-    	font-size: 64px;
-        background-color: #ede0c8;
-        color: #776e65;
-    }
-
-    #box8 {
-        font-size: 64px;
-        background-color: #f2b179;
-        color: #f9f6f2;
-    }
-
-    #box16 {
-    	font-size: 32px;
-        background-color: #f59563;
-        color: #f9f6f2;
-    }
-
-    #box32 {
-    	font-size: 32px;
-        background-color: #f67c5f;
-        color: #f9f6f2;
-    }
-
-    #box64 {
-    	font-size: 32px;
-        background-color: #f65e3b;
-        color: #f9f6f2;
-    }
-
-    #box128 {
-    	font-size: 24px;
-        background-color: #edcf72;
-        color: #f9f6f2;
-    }
-
-    #box256 {
-    	font-size: 24px;
-        background-color: #edcc61;
-        color: #f9f6f2;
-    }
-
-    #box512 {
-    	font-size: 24px;
-        background-color: #edc850;
-        color: #f9f6f2;
-    }
-
-    #box1024 {
-    	font-size: 16px;
-        background-color: #edc53f;
-        color: #f9f6f2;
-    }
-
-    #box2048 {
-    	font-size: 16px;
-        background-color: #edc22e;
-        color: #f9f6f2;
     }
 </style>
 <body>
@@ -186,4 +108,5 @@
     }
     innerText();
 </script>
+<script src="game.js"></script>
 </html>
