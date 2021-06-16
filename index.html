@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Game</title>
+<link rel="javascript" href="game.js">
+</head>
+<style>
+	#heading1 {
+    	font-size: 48px;
+        text-align: center;
+        font-weight: bold;
+        font-family: Arial;
+    }
+    
+    #bound {
+    	width: 75%;
+        padding: 5% 5%;
+        margin: auto;
+        border: 1px solid grey;
+        border-radius: 10px;
+    }
+    
+    #gameboard {
+    	border: 2px solid black;
+        margin: auto;
+        border-radius: 5px;
+    }
+    
+    #gameboard td, #gameboard tr {
+    	width: 100px;
+        height: 100px;
+        border: 1px solid black;
+    }
+    
+    #gameboard td {
+    	display: table-cell;
+    }
+    
+    #box2, #box4, #box8, #box16, #box32, #box64, #box128, #box256, #box512, #box1024, #box2048 {
+    	display: flex;
+        justify-content: center;
+        align-items: center;
+    	width: 100px;
+        height: 100px;
+        margin: auto;
+        font-family: Arial;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    
+    #box2 {
+    	font-size: 64px;
+        background-color: #eee4da;
+        color: #776e65;
+    }
+    
+    #box4 {
+    	font-size: 64px;
+        background-color: #ede0c8;
+        color: #776e65;
+    }
+
+    #box8 {
+        font-size: 64px;
+        background-color: #f2b179;
+        color: #f9f6f2;
+    }
+
+    #box16 {
+    	font-size: 32px;
+        background-color: #f59563;
+        color: #f9f6f2;
+    }
+
+    #box32 {
+    	font-size: 32px;
+        background-color: #f67c5f;
+        color: #f9f6f2;
+    }
+
+    #box64 {
+    	font-size: 32px;
+        background-color: #f65e3b;
+        color: #f9f6f2;
+    }
+
+    #box128 {
+    	font-size: 24px;
+        background-color: #edcf72;
+        color: #f9f6f2;
+    }
+
+    #box256 {
+    	font-size: 24px;
+        background-color: #edcc61;
+        color: #f9f6f2;
+    }
+
+    #box512 {
+    	font-size: 24px;
+        background-color: #edc850;
+        color: #f9f6f2;
+    }
+
+    #box1024 {
+    	font-size: 16px;
+        background-color: #edc53f;
+        color: #f9f6f2;
+    }
+
+    #box2048 {
+    	font-size: 16px;
+        background-color: #edc22e;
+        color: #f9f6f2;
+    }
+</style>
+<body>
+<p id="heading1">Board</p>
+<div style="height:25px"></div>
+<div id="bound">
+	<table id="gameboard">
+		<tr>
+	    	<td></td>
+	        <td></td>
+	        <td></td>
+	        <td></td>
+	    </tr>
+	    <tr>
+	    	<td></td>
+	        <td></td>
+	        <td></td>
+	        <td></td>
+	    </tr>
+	    <tr>
+	    	<td></td>
+	        <td></td>
+	        <td></td>
+	        <td></td>
+	    </tr>
+	    <tr>
+	    	<td></td>
+	        <td></td>
+	        <td></td>
+	        <td></td>
+	    </tr>
+	</table>
+</div>
+<div style="height:25px"></div>
+<div id="bound">
+    <div id="box2"></div>
+    <br><br>
+    <div id="box4"></div>
+    <br><br>
+    <div id="box8"></div>
+    <br><br>
+    <div id="box16"></div>
+    <br><br>
+    <div id="box32"></div>
+    <br><br>
+    <div id="box64"></div>
+    <br><br>
+    <div id="box128"></div>
+    <br><br>
+    <div id="box256"></div>
+    <br><br>
+    <div id="box512"></div>
+    <br><br>
+    <div id="box1024"></div>
+    <br><br>
+    <div id="box2048"></div>
+</div>
+</body>
+<script>
+    function innerText() {
+    	document.getElementById("box2").innerHTML = "2";
+        document.getElementById("box4").innerHTML = "4";
+        document.getElementById("box8").innerHTML = "8";
+        document.getElementById("box16").innerHTML = "16";
+        document.getElementById("box32").innerHTML = "32";
+        document.getElementById("box64").innerHTML = "64";
+        document.getElementById("box128").innerHTML = "128";
+        document.getElementById("box256").innerHTML = "256";
+        document.getElementById("box512").innerHTML = "512";
+        document.getElementById("box1024").innerHTML = "1024";
+        document.getElementById("box2048").innerHTML = "2048";
+    }
+    innerText();
+</script>
+</html>
